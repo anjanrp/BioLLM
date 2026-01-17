@@ -114,22 +114,4 @@ python scripts/04_eval.py --k 5 --run_llm
 * **Citation present rate:** 0.9857
 * **Citation valid rate (1..k):** 0.9857
 
-> “Citation valid” checks that bracketed citations like `[1]` refer only to retrieved evidence blocks.
-
----
-
-## Notes on reproducibility
-
-* Large/generated folders (`data/raw/`, `indexes/`, `results/`) are ignored by default to keep the repo lightweight.
-* Evaluation is reproducible via a fixed-seed “silver” benchmark generated from the indexed corpus.
-
----
-
-## Resume alignment (what this demonstrates)
-
-* Built a **document ingestion + embedding + indexing pipeline** over biomedical literature.
-* Implemented **semantic retrieval** with FAISS + Sentence-Transformers.
-* Added **evidence-grounded answering with citations** using a **local LLM** (Ollama).
-* Built an **evaluation harness** measuring **Recall@K** and **citation formatting validity**.
-
 ---
