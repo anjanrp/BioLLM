@@ -47,10 +47,8 @@ BioLLM/
 ### 1) Create environment
 
 ```bash
-conda create -n biomed-rag python=3.11 -y
+conda env create -f environment.yml
 conda activate biomed-rag
-pip install numpy pandas tqdm scikit-learn matplotlib requests beautifulsoup4 lxml
-pip install sentence-transformers faiss-cpu
 ```
 
 ### 2) Install + run Ollama
